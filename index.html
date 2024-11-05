@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dialog Box</title>
+    
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="head">Dialog Box.js</h1>
+        <p class="para">Pure Javascript  plugin that adds custom dialog boxese "alerts" on my projects. let's check out as below👇</p>
+        <div class="boxes">
+
+        <div class="box_1">
+            <span class="text">Yes/No</span>
+            <p class="para_1" id="paragraph">Show dialog box with two buttons, that is yes or no.custom click on change button.</p>
+            <button class="btn"onclick="openModal()">Change</button>
+        </div>
+
+        <div class="box_2">
+            <span class="text">Alert</span>
+            <p class="para_1">Show Alert Box</p>
+            <p class="para_1">This example shows the alert box</p>
+            <button class="btn btn2" onclick="showAlert()">show alert</button>
+        </div>
+
+        <div class="box_3">
+            <span class="text">Form</span>
+            <p class="para_1" >Show form you can submit</p>
+            <p class="para_1" >This shows the from can submit using show form</p>
+            <button class="btn btn3" onclick="showForm()">Show Form</button>
+        </div>      
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <span class="heading">Change font color</span><hr>
+             <p class="heading heading-sub" >Do you want to change font color ?</p><hr>
+             <button class="yes" onClick="colorModal()">yes</button>
+             <button class="yes no" onclick="closeModal()">No</button>
+        </div>
+    </div>
+    <div class="overlay_1" id="overlays">
+<div class="modal_1">
+    <p class="heading">This example show alert..</p>
+    <button class="btnnew" onclick ="ok()">ok</button>
+</div>
+    </div>
+    <div class="overlay_2" id="text">
+        <div class="modal_2">
+          <h3 class="heading">login form</h3> 
+          <input type="text" placeholder="User id" class="heading_1"/ id="pass">
+          <input type="text" placeholder="password"class="heading_1" id="pass">
+          <button class="yes yes1" onclick="login()">login</button>
+          <button class="yes none" onclick="logOut()">log out</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
